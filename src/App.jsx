@@ -21,7 +21,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/blog" element={<Comunidad/>} ></Route>
+          <Route path="/blog" element={<Blog/>} ></Route>
           <Route path="/acerca-de" element={<AcercaDe />} />
           <Route path="/comunidad" element={<Comunidad/>} ></Route>
           <Route path="/fanArts" element={<FanArts />} />

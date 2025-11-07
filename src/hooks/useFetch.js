@@ -7,12 +7,15 @@ function useFetch(url) {
   const [error,setError]= useState(null);
 
   useEffect(() => {
+
+
+
     const obtencionData = async () => {
       try {
         setLoading(true);
         const response = await fetch(url);
         if(!response.ok){
-          throw new Error('error al cargar los datos')
+          throw new Error(`Error HTTP: ${response.status}`)
         }
         const data = await response.json();
         console.log(data);
@@ -25,6 +28,8 @@ function useFetch(url) {
       }
     };
     obtencionData();
+
+
   }, [url]);
 
   return {data ,loading , error}

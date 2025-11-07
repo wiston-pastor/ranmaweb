@@ -28,6 +28,7 @@ function Comunidad() {
       {posts.map((e) => {
         return (
           <Card
+            key={e.id}
             name={e.name}
             username={e.username}
             email={e.email}
