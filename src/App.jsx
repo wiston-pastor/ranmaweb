@@ -7,8 +7,9 @@ import { Routes, Route } from "react-router-dom";
 import Inicio from './pages/Inicio'
 import AcercaDe from './pages/AcercaDe'
 import FanArts from "./pages/FanArts";
- 
-import { useState, useEffect } from "react";
+import Blog from "./pages/Blog"
+import Comunidad from "./pages/Comunidad";
+
 
 function App() {
   return (
@@ -20,14 +21,15 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/AcercaDe" element={<AcercaDe />} />
-          <Route path="/FanArts" element={<FanArts />} />
+          <Route path="/blog" element={<Comunidad/>} ></Route>
+          <Route path="/acerca-de" element={<AcercaDe />} />
+          <Route path="/comunidad" element={<Comunidad/>} ></Route>
+          <Route path="/fanArts" element={<FanArts />} />
         </Routes>
       </main>
 
       <footer>Esta pagina esta hecho con mucho amor</footer>
 
-      <UserList></UserList>
     </div>
   );
 }

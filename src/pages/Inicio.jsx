@@ -1,8 +1,12 @@
+import Boton from "../componentes/Boton"
+
 function Inicio() {
   return (
     <div>
       
       <h2>Esto es el inicio</h2>
+        
+
     </div>
   );
 }
