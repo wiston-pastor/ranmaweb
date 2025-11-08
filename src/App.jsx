@@ -9,15 +9,20 @@ import AcercaDe from './pages/AcercaDe'
 import FanArts from "./pages/FanArts";
 import Blog from "./pages/Blog"
 import Comunidad from "./pages/Comunidad";
+import Header from "./componentes/Header";
 
 
 function App() {
   return (
     <div>
-      <h1>RKwistonCopr</h1>
       <header>
-        <Navegacion />
+        <Header></Header>
       </header>
+
+      <nav>
+        <Navegacion />
+      </nav>
+
       <main>
         <Routes>
           <Route path="/" element={<Inicio />} />

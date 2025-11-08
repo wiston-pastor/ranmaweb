@@ -8,12 +8,6 @@ function Comunidad() {
     error: errorPosts,
   } = useFetch("https://jsonplaceholder.typicode.com/users");
 
-  const {
-    data: randomjoke,
-    loadingk,
-    errore,
-  } = useFetch("https://api.chucknorris.io/jokes/random");
-
   if (loadingPosts) {
     return <div>Cargando...</div>;
   }
