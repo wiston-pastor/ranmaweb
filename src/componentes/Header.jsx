@@ -12,8 +12,13 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { FaTransgender, FaLocationDot } from "react-icons/fa6";
 import { BiWorld } from "react-icons/bi";
 
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+
 function Header() {
   const sizeIcon = "1.5rem";
+
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
     <div className="header-bar">
@@ -46,10 +51,12 @@ function Header() {
           <FaRegComments size={sizeIcon} />
         </li>
         <li>
-          <FaRegUser size={sizeIcon} color="#000000" />
+          <FaRegUser size={sizeIcon} />
         </li>
         <li>
-          <IoMdContrast size={sizeIcon} />
+          <button onClick={toggleTheme} >
+            <IoMdContrast size={sizeIcon} />
+          </button>
         </li>
         <li>
           <IoSettingsOutline size={sizeIcon} />

@@ -1,20 +1,24 @@
 .header-bar > ul {
-  background-color: rgb(172, 14, 14);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   list-style: none;
 }
 
 .logo-del-navbar {
-  height: 3.5rem;
+  height: 3rem;
   width: 10.5rem;
 }
 
 .search {
+  width: 25%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
+}
+
+.search>input {
+  width: 90%;
 }

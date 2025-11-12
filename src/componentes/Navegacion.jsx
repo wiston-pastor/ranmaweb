@@ -13,59 +13,71 @@ import { BsFillPersonCheckFill } from "react-icons/bs";
 
 function Navegacion() {
   return (
-    <nav className="bar-nave">
-      <Link className="boton-nav" to="/">
-        <CiYoutube size="1.5rem" />
-        <p>Mejores videos</p>
-      </Link>
+    <nav >
+      <ul className="bar-nave" >
+        <li>
+          <Link className="boton-nav" to="/">
+            <CiYoutube size="1.5rem" />
+            <p>Mejores videos</p>
+          </Link>
+        </li>
+        <li>
+          <Link className="boton-nav" to="/blog">
+            <IoPricetagsOutline />
 
-      <Link className="boton-nav" to="/blog">
-        <IoPricetagsOutline />
+            <p>Categorias</p>
+          </Link>
+        </li>
+        <li>
+          <Link className="boton-nav" to="/acerca-de">
+            <FiTv />
 
-        <p>Categorias</p>
-      </Link>
+            <p>Canales</p>
+          </Link>
+        </li>
+        <li>
+          <Link className="boton-nav" to="/FanArts">
+            <FaRegStar />
 
-      <Link className="boton-nav" to="/acerca-de">
-        <FiTv />
+            <p>FanArt</p>
+          </Link>
+        </li>
+        <li>
+          <Link className="boton-nav" to="/">
+            <MdMovieEdit />
 
-        <p>Canales</p>
-      </Link>
+            <p>RK Videos</p>
+          </Link>
+        </li>
+        <li>
+          <Link className="boton-nav" to="/">
+            <BsWebcam />
 
-      <Link className="boton-nav" to="/FanArts">
-        <FaRegStar />
+            <p>Lives</p>
+          </Link>
+        </li>
+        <li>
+          <Link className="boton-nav" to="/">
+            <IoGameControllerOutline />
 
-        <p>FanArt</p>
-      </Link>
+            <p>GamePlays</p>
+          </Link>
+        </li>
+        <li>
+          <Link className="boton-nav" to="/">
+            <TbBrandOnlyfans />
 
-      <Link className="boton-nav" to="/">
-        <MdMovieEdit />
+            <p>OFs</p>
+          </Link>
+        </li>
+        <li>
+          <Link className="boton-nav" to="/Comunidad">
+            <BsFillPersonCheckFill />
 
-        <p>RK Videos</p>
-      </Link>
-
-      <Link className="boton-nav" to="/">
-        <BsWebcam />
-
-        <p>Lives</p>
-      </Link>
-
-      <Link className="boton-nav" to="/">
-        <IoGameControllerOutline />
-
-        <p>GamePlays</p>
-      </Link>
-
-      <Link className="boton-nav" to="/">
-        <TbBrandOnlyfans />
-
-        <p>OFs</p>
-      </Link>
-
-      <Link className="boton-nav" to="/Comunidad">
-        <BsFillPersonCheckFill />
-
-        <p>Comunidad</p>
-      </Link>
+            <p>Comunidad</p>
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 }
